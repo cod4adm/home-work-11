@@ -3,34 +3,37 @@
 <head>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>ДЗ 11. Flexbox: макет.</title>
 </head>
 <body>
     <header class="header">
-        <div class="header-logo">
-            <a href="#">
-                <img src="images/logo.png" alt="logo" class="header-image">
-            </a>
+        <div class="header-wrap">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo" class="header-image">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Case studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Resources</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header-nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Product</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Case studies</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Resources</a>
-                </li>
-            </ul>
-        </nav>
         <div class="header-buttons">
             <button class="btn btn-white mr-10">Log in</button>
             <button class="btn btn-orange">Try it free</button>
@@ -38,6 +41,7 @@
     </header>
     <hr class="header-line">
     <main class="main">
+        <img class="main-image" src="images/main.png" alt="main-image">
         <div class="main-block">
             <h1 class="main-title">Accelerate localization from code to delivery</h1>
             <p class="main-text">
@@ -52,7 +56,6 @@
                 Try all features for 14 days · No credit card required
             </p>
         </div>
-        <div class="main-image"><img src="images/main.png" alt="main-image"></div>
     </main>
     <section class="prefer">
         <h2 class="prefer-title">The preferred localization tool of 1500+ companies</h2>
@@ -90,7 +93,8 @@
         </ul>
     </section>
     <section class="feature">
-        <div class="feature-block">
+        <div class="feature-block reverse">
+            <img class="feature-image" src="images/feature-image-1.png" alt="feature-image-1">
             <div class="feature-item">
                 <h3 class="feature-title">Control the localization process</h3>
                 <p class="feature-text">
@@ -100,17 +104,12 @@
                     who is doing what and when.</p>
                 <a href="#" class="feature-link">Start now</a>
             </div>
-            <div class="feature-image">
-                <img src="images/feature-image-1.png" alt="feature-image-1">
-            </div>
         </div>
 
         <div class="feature-block">
-            <div class="feature-image">
-                <img src="images/feature-image-2.png" alt="feature-image-3">
-            </div>
+            <img class="feature-image" src="images/feature-image-2.png" alt="feature-image-3">
             <div class="feature-item">
-                <h3 class="feature-title">Shorten time <br>to market</h3>
+                <h3 class="feature-title">Shorten time to market</h3>
                 <p class="feature-text">
                     Localize your product in parallel with the development cycle. Use the 
                     <a href="#" class="feature-text-link">Adobe XD</a>, 
@@ -122,7 +121,8 @@
             </div>
         </div>
 
-        <div class="feature-block">
+        <div class="feature-block reverse">
+            <img class="feature-image" src="images/feature-image-3.png" alt="feature-image-3">
             <div class="feature-item">
                 <h3 class="feature-title">Ensure quality</h3>
                 <p class="feature-text">
@@ -134,15 +134,10 @@
                 </p>
                 <a href="#" class="feature-link">Start now</a>
             </div>
-            <div class="feature-image">
-                <img src="images/feature-image-3.png" alt="feature-image-3">
-            </div>
         </div>
 
         <div class="feature-block">
-            <div class="feature-image">
-                <img src="images/feature-image-4.png" alt="feature-image-4">
-            </div>
+            <img class="feature-image" src="images/feature-image-4.png" alt="feature-image-4">
             <div class="feature-item">
                 <h3 class="feature-title">Less work for developers</h3>
                 <p class="feature-text">
@@ -200,39 +195,41 @@
     </section>
     <section class="boost">
         <h2 class="boost-title">Boost your localization team’s productivity tenfold</h2>
-        <div class="boost-cards-images">
-            <img src="images/boost-1.png" alt="boost-image-1" class="boost-image">
-            <img src="images/boost-2.png" alt="boost-image-2" class="boost-image">
-            <img src="images/boost-3.png" alt="boost-image-3" class="boost-image">
-        </div>
-        <div class="boost-cards">
-            <div class="boost-card">
-                <p class="boost-name">Managers</p>
-                <p class="boost-descr">
-                    Update existing and launch new features and products while simultaneously 
-                    localizing them in multiple languages. Streamline your team's workflow, 
-                    maximize productivity, and speed up expansion to other markets.
-                </p>
-                <a href="#" class="boost-link">Learn more</a>
+        <div class="boost-wrap">
+            <div class="boost-cards-images">
+                <img src="images/boost-1.png" alt="boost-image-1" class="boost-image">
+                <img src="images/boost-2.png" alt="boost-image-2" class="boost-image">
+                <img src="images/boost-3.png" alt="boost-image-3" class="boost-image">
             </div>
-            <div class="boost-card">
-                <p class="boost-name">Developers</p>
-                <p class="boost-descr">
-                    Set up an integration with your code repository or your own custom SDK 
-                    via Lokalise's <a href="#" class="boost-descr-link">powerful API</a>. Do that once, and every time you make 
-                    changes in the code, they'll be automatically imported to Lokalise for translation.
-                </p>
-                <a href="#" class="boost-link">Learn more</a>
-            </div>
-            <div class="boost-card">
-                <p class="boost-name">Translators</p>
-                <p class="boost-descr">
-                    Eliminate double-work and neverending revisions with visual 
-                    context (screenshots) and live previews. Improve the quality 
-                    and speed of your translations with built-in CAT tools, like 
-                    autocomplete, inline machine translation, and translation memory.
-                </p>
-                <a href="#" class="boost-link">Learn more</a>
+            <div class="boost-cards">
+                <div class="boost-card">
+                    <p class="boost-name">Managers</p>
+                    <p class="boost-descr">
+                        Update existing and launch new features and products while simultaneously 
+                        localizing them in multiple languages. Streamline your team's workflow, 
+                        maximize productivity, and speed up expansion to other markets.
+                    </p>
+                    <a href="#" class="boost-link">Learn more</a>
+                </div>
+                <div class="boost-card">
+                    <p class="boost-name">Developers</p>
+                    <p class="boost-descr">
+                        Set up an integration with your code repository or your own custom SDK 
+                        via Lokalise's <a href="#" class="boost-descr-link">powerful API</a>. Do that once, and every time you make 
+                        changes in the code, they'll be automatically imported to Lokalise for translation.
+                    </p>
+                    <a href="#" class="boost-link">Learn more</a>
+                </div>
+                <div class="boost-card">
+                    <p class="boost-name">Translators</p>
+                    <p class="boost-descr">
+                        Eliminate double-work and neverending revisions with visual 
+                        context (screenshots) and live previews. Improve the quality 
+                        and speed of your translations with built-in CAT tools, like 
+                        autocomplete, inline machine translation, and translation memory.
+                    </p>
+                    <a href="#" class="boost-link">Learn more</a>
+                </div>
             </div>
         </div>
     </section>
